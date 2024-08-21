@@ -28,7 +28,7 @@ $
 * **2. [Best band ever!](./2-fans.sql)** - Write a SQL script that ranks country origins of bands, ordered by the number of (non-unique) fans. - `2-fans.sql`.
 * **3. [Old school band](./3-glam_rock.sql)** - Write a SQL script that lists all bands with `Glam rock` as their main style, ranked by their longevity. - `3-glam_rock.sql`.
 * **4. [Buy buy buy](./4-store.sql)** - Write a SQL script that creates a trigger that decreases the quantity of an item after adding a new order. - `4-store.sql`.
-* **5. [Email validation to sent*](./5-valid_email.sql)* - Write a SQL script that creates a trigger that resets the attribute `valid_email` only when the `email` has been changed. - `5-valid_email.sql`.
+* **5. [Email validation to sent](./5-valid_email.sql)** - Write a SQL script that creates a trigger that resets the attribute `valid_email` only when the `email` has been changed. - `5-valid_email.sql`.
 * **6. [Add bonus](./6-bonus.sql)** - Write a SQL script that creates a stored procedure `AddBonus` that adds a new correction for a student. - `6-bonus.sql`.
 * **7. [Average score](./7-average_score.sql)** - Write a SQL script that creates a stored procedure `ComputeAverageScoreForUser` that computes and store the average score for a student. - `7-average_score.sql`.
 * **8. [Optimize simple search](./8-index_my_names.sql)** - Write a SQL script that creates an index `idx_name_first` on the table `names` and the first letter of `name`. - `8-index_my_names.sql`.
