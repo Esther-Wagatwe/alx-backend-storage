@@ -16,7 +16,7 @@ BEGIN
 
     SELECT AVG(score) INTO avg_score
     FROM corrections
-    WHERE user_id = user_id;
+    WHERE corrections.user_id = user_id;
 
     IF avg_score IS NOT NULL THEN
         UPDATE users
