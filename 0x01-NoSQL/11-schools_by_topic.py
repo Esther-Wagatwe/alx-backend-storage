@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 This module provides a function to find and return a list of schools
-that include a specific topic in their 'topics' field within a MongoDB collection.
+that include a specific topic in their 'topics' field
+within a MongoDB collection
 """
 
 
