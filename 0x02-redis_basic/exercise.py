@@ -16,22 +16,24 @@ def count_calls(method: Callable) -> Callable:
         return method(self, *args, **kwargs)
     return wrapper
 
+
 def call_history(method: Callable) -> Callable:
     """Decorator to store history of inputs and outputs."""
     @wraps(method)
     def wrapper(self, *args, **kwargs) -> Any:
         input_key = f"{method.__qualname__}:inputs"
         output_key = f"{method.__qualname__}:outputs"
-        
+
         self._redis.rpush(input_key, str(args))
-        
+
         result = method(self, *args, **kwargs)
-        
+
         self._redis.rpush(output_key, str(result))
-        
+
         return result
-    
+
     return wrapper
+
 
 def replay(fn: Callable) -> None:
     """Display the history of calls for a particular function."""
